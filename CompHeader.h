@@ -54,9 +54,9 @@ class workComputers {
 		void SortProcName();
 		void SortPrice();
 
-		friend void makePerechen1(workComputers clWorkComp, Perechen& clPerech);
-		friend void makePerechen2(workComputers clWorkComp, Perechen& clPerech);
-		friend void makePerechen3(workComputers clWorkComp, Perechen& clPerech);
+		friend void makePerechen1(workComputers, Perechen&);
+		friend void makePerechen2(workComputers, Perechen&);
+		friend void makePerechen3(workComputers, Perechen&);
 	protected:
 		std::vector<RECORD> CapabilitiesComp;
 };
@@ -92,9 +92,9 @@ class Perechen : public SearchComp{
 		void saveSecondPerech(); 
 		void saveThirdPerech();
 
-		friend void makePerechen1(workComputers clWorkComp, Perechen& clPerech);
-		friend void makePerechen2(workComputers clWorkComp, Perechen& clPerech);
-		friend void makePerechen3(workComputers clWorkComp, Perechen& clPerech);
+		friend void makePerechen1(workComputers, Perechen&);
+		friend void makePerechen2(workComputers, Perechen&);
+		friend void makePerechen3(workComputers, Perechen&);
 		
 	private:
 		int pBrandlen, pProclen, pVideolen;
